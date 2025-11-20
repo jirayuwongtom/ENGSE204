@@ -10,5 +10,4 @@ public class Lab1_2 {
 		System.out.println(Area);
 		input.close();
 	}
-
 }
