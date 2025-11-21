@@ -11,7 +11,7 @@ public class Lab1_9 {
 			number[i] = input.nextInt();
 			sum += number[i];
 		}
-		double averageNumber = sum / N;
+		double averageNumber = (double) sum / N;
 		System.out.println(averageNumber);
 		input.close();
 	}
