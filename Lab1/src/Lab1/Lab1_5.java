@@ -4,18 +4,22 @@ public class Lab1_5 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int menuNumber = input.nextInt();
-		if(menuNumber == 1) {
-			System.out.println("Americano");
-		}else if(menuNumber == 2) {
-			System.out.println("Latte");
-		}else if(menuNumber == 3) {
-			System.out.println("Espresso");
-		}else if(menuNumber == 4) {
-			System.out.println("Mocha");
-		}else {
-			System.out.println("Invalid Menu");
+		System.out.print("enter menu :  ");
+		int num = input.nextInt();
+		
+		if (num == 1) {
+			System.out.print("Americano");
+		} else if (num == 2) {
+			System.out.print("Latte");
+		} else if (num == 3) {
+			System.out.print("Espresso");
+		} else if (num == 4) {
+			System.out.print("Mocha");
+		} else {
+			System.out.print("Invalid Menu");
 		}
+		
 		input.close();
 	}
+	
 }
