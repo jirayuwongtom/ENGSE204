@@ -5,7 +5,7 @@ public class Lab1_3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Number : ");
 		int num = sc.nextInt();
-		if(num % 2 == 0) {
+		if (num % 2 == 0) {
 			System.out.println("Even Number");
 		} else {
 			System.out.println("Odd Number");
