@@ -15,8 +15,6 @@ public class Lab1_4 {
 			System.out.println("D");
 		} else if (score >= 0 && score <= 49) {
 			System.out.println("F");
-		} else {
-            System.out.println("Please enter a number 0-100 .");
 		}
 		input.close();
 	}
