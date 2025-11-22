@@ -4,18 +4,19 @@ public class Lab1_2 {
 	
 
 	public static void main(String[] args) {
-		double w;
-		double h;
+		double x;
+		double y;
+		double z;
 		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter Width : ");
-		 w = input.nextDouble();
+		 x = input.nextDouble();
 		
 		System.out.print("Enter Height : ");
-		 h = input.nextDouble();
-		
-		System.out.printf("Area = %.2f" , w * h);
+		 y = input.nextDouble();
+		z = x * y;
+		System.out.printf("area = " + z);
 		input.close();
 	}
 }
