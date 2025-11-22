@@ -4,18 +4,26 @@ public class Lab1_8 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int N = input.nextInt();
-		int[]number = new int[N];
-		for(int i = 0; i < N; i++) {
+		int x;
+		System.out.print("Enter number : ");
+		
+		x = input.nextInt();
+		System.out.println("----------------" );
+		
+		int[]number = new int[x];
+		for(int i = 0; i < x; i++) {
 			number[i] = input.nextInt();
 		}
-		int maxNumber = number[0];
-		for(int i = 0; i < N; i++) {
-			if(number[i] > maxNumber) {
-				maxNumber = number[i];
+		
+		int max = number[0];
+		
+		for(int i = 0; i < x; i++) {
+			if(number[i] > max) {
+				max = number[i];
 			}
 		}
-		System.out.println(maxNumber);
+		
+		System.out.println("Maxnumber : " +max);
 		input.close();
 	}
 }
