@@ -23,7 +23,7 @@ public class Lab1_8 {
 			}
 		}
 		
-		System.out.println("Maxnumber : " +max);
+		System.out.println("Maxnumber : " + max);
 		input.close();
 	}
 }
