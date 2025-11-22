@@ -11,6 +11,7 @@ public class Lab1_13 {
 		
 		x = input.nextInt();
 		y = input.nextInt();
+		System.out.println("-----" );
 		
 		int grid[][] = new int[x][y];
 		
