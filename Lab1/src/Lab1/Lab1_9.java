@@ -4,15 +4,21 @@ public class Lab1_9 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int N = input.nextInt();
-		int[]number = new int[N];
+		int x;
 		int sum = 0;
-		for(int i = 0; i < N; i++) {
+		System.out.print("Enter number : ");
+		
+		x = input.nextInt();
+		System.out.println("----------------" );
+		
+		int[]number = new int[x];
+		
+		for(int i = 0; i < x; i++) {
 			number[i] = input.nextInt();
-			sum += number[i];
+			sum = sum + number[i];
 		}
-		double averageNumber = (double) sum / N;
-		System.out.println(averageNumber);
+		double averageNumber = (double) sum /x;
+		System.out.println("Averagenumber : " + averageNumber);
 		input.close();
 	}
 }
