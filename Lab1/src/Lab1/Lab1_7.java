@@ -5,11 +5,11 @@ public class Lab1_7 {
 	public static void main(String[] args) {
 		int sum = 0;
 		int num;
+		int x;
 		Scanner input = new Scanner(System.in);
-		int n = input.nextInt();
+		x = input.nextInt();
 		
-		
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < x; i++) {
 			num = input.nextInt();
 			sum = sum + num;
 		}
