@@ -11,10 +11,10 @@ public class Lab1_10 {
 		double x;
 		double y;
 		System.out.print("Enter Width : ");
-		x= input.nextDouble();
+		x = input.nextDouble();
 		
 		System.out.print("Enter Height : ");
-		y= input.nextDouble();
+		y = input.nextDouble();
 		
 		double area = calculateArea(x , y);
 		System.out.printf("area = " + area);
