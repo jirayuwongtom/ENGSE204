@@ -7,6 +7,7 @@ public class Lab1_7 {
 		int num;
 		int x;
 		Scanner input = new Scanner(System.in);
+		System.out.print("Enter number : ");
 		x = input.nextInt();
 		
 		System.out.println("----------------" );
