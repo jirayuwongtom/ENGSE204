@@ -1,15 +1,19 @@
 package Lab1;
 import java.util.Scanner;
 public class Lab1_2 {
+	
 
 	public static void main(String[] args) {
+		double w;
+		double h;
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter Width : ");
-		double w = input.nextDouble();
+		 w = input.nextDouble();
 		
 		System.out.print("Enter Height : ");
-		double h = input.nextDouble();
+		 h = input.nextDouble();
 		
 		System.out.printf("Area = %.2f" , w * h);
 		input.close();

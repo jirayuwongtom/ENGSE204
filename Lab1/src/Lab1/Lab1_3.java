@@ -3,14 +3,21 @@ import java.util.Scanner ;
 public class Lab1_3 {
 	public static void main(String[] args) {
 		int x;
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter Number : ");
-		 x = sc.nextInt();
+		String y;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter number : ");
+		 x = input.nextInt();
+		 
 		if (x % 2 == 0) {
-			System.out.println("Even Number");
+			y = "even number";
 		} else {
-			System.out.println("Odd Number");
+			y = "odd number";
 		}
-		sc.close();
+		
+		System.out.println(y);
+		
+		input.close();
 	}
 }
