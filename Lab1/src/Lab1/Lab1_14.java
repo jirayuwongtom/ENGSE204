@@ -8,7 +8,7 @@ public class Lab1_14 {
 		int c;
 		int targetR;
 		int targetC;
-		
+		int count = 0;
 		r = input.nextInt();
 		c = input.nextInt();
 		
@@ -27,8 +27,22 @@ public class Lab1_14 {
 		if (map[targetR][targetC] == '*') {
 			System.out.println("Mine");
 		}
-				
 		
+		int[]checkR = {-1, -1, -1, 0, 0, 1, 1, 1};
+		int[]checkC = {-1, 0, 1, -1, 1, -1, 0, 1};
+		
+		for(int x =0; x < 8; x++) {
+			int cr = targetR + checkR[x];
+			int cc = targetC + checkC[x];
+			
+			if(cc >= 0 && cc < r && cr >= 0 && cr < c) {
+				if (map[cr][cc] == '*') {
+					count ++;
+				}
+			}
+		}
+				
+		System.out.print(count);
 		input.close();
 	}
 
