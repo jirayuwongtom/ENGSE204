@@ -26,6 +26,7 @@ public class Lab1_14 {
 		
 		if (map[targetR][targetC] == '*') {
 			System.out.println("Mine");
+			return;
 		}
 		
 		int[]checkR = {-1, -1, -1, 0, 0, 1, 1, 1};
