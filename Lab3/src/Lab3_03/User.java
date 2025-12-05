@@ -20,24 +20,16 @@ public class User {
 			System.out.println("Password is too short");
 		}
 	}
-	
-	
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
 		String initialPassword;
 		String newPassword;
 		initialPassword = input.nextLine();
 		newPassword = input.nextLine();
-		
 		User u = new User(initialPassword);
-		
 		u.setPassword(newPassword);
-		
 		System.out.println(u.getPassword());
-		
 		input.close();
-
 	}
-
 }
