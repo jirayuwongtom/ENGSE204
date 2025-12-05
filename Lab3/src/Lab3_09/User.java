@@ -16,7 +16,6 @@ public class User {
 			this.password = "invalid";
 			System.out.println("Creation failed");
 		}
-		
 	}
 	
 	public String getPassword() {
@@ -77,7 +76,5 @@ public class User {
 		System.out.println(user1.getPassword());
 		System.out.println(user2.getPassword());
 		input.close();
-
 	}
-
 }

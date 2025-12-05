@@ -40,6 +40,7 @@ public class BankAccount {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		
 		double initial;
 		double depositAmount;
 		double withdrawAmount;
@@ -56,7 +57,5 @@ public class BankAccount {
 		System.out.println("Final Balance : " + b.getBalance());
 		
 		input.close();
-
 	}
-
 }
