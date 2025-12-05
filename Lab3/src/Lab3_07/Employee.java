@@ -22,7 +22,6 @@ public class Employee {
 		this.department = newDepartment;
 	}
 	
-	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String id;
@@ -41,7 +40,5 @@ public class Employee {
 		System.out.println(e.getDepartment());
 		
 		input.close();
-
 	}
-
 }

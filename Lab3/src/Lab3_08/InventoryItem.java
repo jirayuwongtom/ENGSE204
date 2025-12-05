@@ -50,7 +50,7 @@ public class InventoryItem {
         String name = input.nextLine();
         int initialStock = input.nextInt();
         int n = input.nextInt();
-        input.nextLine(); // clear buffer
+        input.nextLine();
 
         InventoryItem item = new InventoryItem(name, initialStock);
 
@@ -58,14 +58,12 @@ public class InventoryItem {
             String command = input.nextLine().trim();
             int amount = input.nextInt();
             input.nextLine();
-
             if (command.equals("ADD")) {
                 item.addStock(amount);
             } else if (command.equals("SELL")) {
                 item.sellStock(amount);
             }
         }
-
         System.out.println("Final Stock : " + item.getStock());
         input.close();
     }
