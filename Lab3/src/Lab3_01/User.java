@@ -22,7 +22,5 @@ public class User {
 		
 		System.out.println(u.getUsername());
 		input.close();
-
 	}
-
 }
