@@ -7,12 +7,15 @@ public class SystemLogger {
 	private static String getLevelName(int level) {
 		if(level == 1) {
 			return "INFO";
-		}else if (level == 2) {
+		}
+		else if (level == 2) {
 			return "DEBUG";
-		}else if (level == 3) {
+		}
+		else if (level == 3) {
 			return "ERROR";
-		}else {
-			return "UNKNOW";
+		}
+		else {
+			return "UNKNOWN";
 		}		
 	}
 	
@@ -27,7 +30,7 @@ public class SystemLogger {
 
 	public static void log(int messageLevel , String message) {
 		if(messageLevel >= currentLogLevel) {
-			System.out.println("[" + getLevelName(messageLevel) + "]" + message);
+			System.out.println("[" + getLevelName(messageLevel) + "] : " + message);
 		}
 	}
 	
