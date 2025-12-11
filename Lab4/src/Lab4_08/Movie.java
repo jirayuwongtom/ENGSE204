@@ -32,30 +32,35 @@ public class Movie {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int mode = input.nextInt();
+		int mode;
+		mode = input.nextInt();
 		input.nextLine();
 		
 		Movie m;
-		
 		if(mode == 1) {
-			String title = input.nextLine();
+			String title;
+			title = input.nextLine();
 			m = new Movie(title);
 		}else if (mode == 2) {
-			String title = input.nextLine();
-            String director = input.nextLine();
+			String title;
+            String director;
+            title = input.nextLine();
+            director = input.nextLine();
             m = new Movie(title , director);
 		}else if (mode == 3) {
-			String title = input.nextLine();
-            String director = input.nextLine();
-            double rating = input.nextDouble();
+			String title;
+            String director;
+            double rating;
+            title = input.nextLine();
+            director = input.nextLine();
+            rating = input.nextDouble();
             m = new Movie(title , director , rating);
 		}else {
-			System.out.println("You can only choose 1 - 3");
+			System.out.println("Invalid mode");
 			return;
 		}
 		m.displayInfo();
 		input.close();
-
 	}
 
 }
