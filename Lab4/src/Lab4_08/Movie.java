@@ -56,7 +56,7 @@ public class Movie {
             rating = input.nextDouble();
             m = new Movie(title , director , rating);
 		}else {
-			System.out.println("Invalid mode");
+			System.out.println("You can only choose 1 - 3");
 			return;
 		}
 		m.displayInfo();
