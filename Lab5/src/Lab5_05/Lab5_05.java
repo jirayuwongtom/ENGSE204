@@ -48,7 +48,7 @@ public class Lab5_05 {
 		double radius = input.nextDouble();
 		double width = input.nextDouble();
 		double height = input.nextDouble();
-		
+		input.nextLine();
 		Shape circle = new Circle("Circle" , radius);
 		Shape rectangle = new Rectangle("Rectangle" , width , height);
 		Shape[] s = {circle , rectangle};
