@@ -53,11 +53,11 @@ public class Lab5_11 {
 		int pdfPage1 = input.nextInt();
 		
 		
-		Document TextDocument1 = new TextDocument(textTitle , textWord);
-		Document PDFDocument1 = new PDFDocument(pdfTitle , pdfPage);
-		Document TextDocument2 = new TextDocument(textTitle1 , textWord1);
-		Document PDFDocument2 = new PDFDocument(pdfTitle1 , pdfPage1);
-		Document[] d = {TextDocument1 , PDFDocument1 , TextDocument2 , PDFDocument2};
+		Document textDocument1 = new TextDocument(textTitle , textWord);
+		Document pdfDocument1 = new PDFDocument(pdfTitle , pdfPage);
+		Document textDocument2 = new TextDocument(textTitle1 , textWord1);
+		Document pdfDocument2 = new PDFDocument(pdfTitle1 , pdfPage1);
+		Document[] d = {textDocument1 , pdfDocument1 , textDocument2 , pdfDocument2};
 		
 		int totalPages = 0;
 		for(int i = 0; i < d.length; i++) {
