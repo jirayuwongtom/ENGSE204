@@ -7,9 +7,27 @@ class Animal {
 	protected String name;
 	protected int age;
 	
+	public String getName() {
+		return name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
 	public void displayInfo() {
 		System.out.println("Name : " + name + ", Age : " + age);
 	}
+	
+	
 }
 
 class Dog extends Animal {
@@ -26,9 +44,8 @@ public class Lab5_01 {
 			int age = input.nextInt();
 			
 			Dog dog = new Dog();
-			
-			dog.name = name;
-			dog.age = age;
+			dog.setName(name);
+			dog.setAge(age);
 			dog.makeSound();
 			dog.displayInfo();
 			input.close();
